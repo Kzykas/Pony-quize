@@ -14,7 +14,7 @@ public class MongoDB {
 
     static MongoClient mongoClient=new MongoClient( "Localhost" , 27017 );
 
-    static MongoDatabase database = mongoClient.getDatabase("mylittlepony");
+    static MongoDatabase database = mongoClient.getDatabase("pony-quiz");
 
     private static MongoCollection<Document> getCollectionCounter(){return database.getCollection("counter");}
 
